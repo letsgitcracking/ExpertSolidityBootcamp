@@ -16,6 +16,7 @@
     "@openzeppelin/test-helpers": "^0.5.15",
     "@openzeppelin/truffle-upgrades": "^1.14.0",
     "chai": "^4.3.6",
-    "web3": "^1.7.1"
+    "web3": "^1.7.1",
+    "truffle": "5.5.5"
   }
 }
