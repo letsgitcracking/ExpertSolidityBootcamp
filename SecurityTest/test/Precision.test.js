@@ -39,7 +39,7 @@ contract('NinfaMarketplace', ( [deployer, buyer, seller] ) => {
 
 
         await vulnerableContract.sellTokens( 5, { from: seller } ) // if the amount to buy is less than 10 tokens then final result will be 0.
-        expect( await web3.eth.getBalance('0x0000000000000000000000000000000dEAdbEEf0') ).to.be.bignumber.equal( oldBalance + ether(1) )
+          expect( await web3.eth.getBalance('0x0000000000000000000000000000000dEAdbEEf0') ).to.be.bignumber.equal( oldBalance + ether(0.5) )
     })
 
     it('should allow minting by owner only', async () => {
